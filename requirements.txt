@@ -1,0 +1,1 @@
+# No external dependencies - server/app.py uses only the Python standard library.
