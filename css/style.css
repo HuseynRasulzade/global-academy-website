@@ -189,13 +189,19 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
   flex-direction: column;
   gap: 4px;
   background: #fff;
-  padding: 12px 24px 22px;
+  padding: 0 24px;
   box-shadow: var(--shadow-sm);
   max-height: 0;
   overflow: hidden;
-  transition: max-height .4s var(--ease);
+  visibility: hidden;
+  transition: max-height .4s var(--ease), padding .4s var(--ease), visibility 0s linear .4s;
 }
-.nav-mobile.open { max-height: 420px; }
+.nav-mobile.open {
+  max-height: 420px;
+  padding: 12px 24px 22px;
+  visibility: visible;
+  transition: max-height .4s var(--ease), padding .4s var(--ease), visibility 0s linear 0s;
+}
 .nav-mobile a {
   padding: 12px 4px;
   font-weight: 600;
