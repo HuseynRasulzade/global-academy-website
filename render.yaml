@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: global-academy-chat
+    runtime: python3
+    plan: free
+    buildCommand: ""
+    startCommand: python3 server/app.py
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: "*"
