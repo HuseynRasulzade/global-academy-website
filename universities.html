@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universitetlər | Global Academy</title>
+<meta name="description" content="Böyük Britaniya, ABŞ və Avstraliyada xaricdə təhsil üçün seçilmiş universitetləri kəşf edin.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header universities-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="Global Academy" class="brand-mark">
+      <span class="brand-text">Global<em>Academy</em></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Əsas naviqasiya">
+      <a href="index.html">Ana Səhifə</a>
+      <a href="about.html">Haqqımızda</a>
+      <a href="programs.html">Proqramlar</a>
+      <a href="abroad.html" class="active">Xaricdə Təhsil</a>
+      <a href="contact.html">Əlaqə</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary nav-cta">Qeydiyyatdan Keç</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menyunu aç" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobil naviqasiya">
+    <a href="index.html">Ana Səhifə</a>
+    <a href="about.html">Haqqımızda</a>
+    <a href="programs.html">Proqramlar</a>
+    <a href="abroad.html" class="active">Xaricdə Təhsil</a>
+    <a href="universities.html">Universitetlər</a>
+    <a href="contact.html">Əlaqə</a>
+    <a href="contact.html" class="btn btn-primary">Qeydiyyatdan Keç</a>
+  </nav>
+</header>
+
+<main>
+  <section class="universities-hero">
+    <img src="assets/campus-uk.webp" alt="Tarixi universitet kampusu" class="universities-hero-image">
+    <div class="universities-hero-overlay"></div>
+    <div class="container universities-hero-content">
+      <p class="eyebrow reveal">Xaricdə Təhsil</p>
+      <h1 class="page-title reveal">Universitetləri kəşf edin</h1>
+      <p class="page-sub reveal">Akademik məqsədlərinizə uyğun universitet və proqram seçimi üçün fərdi dəstək alın.</p>
+      <a href="contact.html" class="btn btn-gold reveal">Konsultasiya AL</a>
+    </div>
+  </section>
+
+  <section class="section university-directory" aria-labelledby="universitiesTitle">
+    <div class="container">
+      <div class="directory-heading">
+        <div>
+          <p class="section-eyebrow reveal">Seçilmiş istiqamətlər</p>
+          <h2 class="section-title reveal" id="universitiesTitle">Populyar universitetlər</h2>
+        </div>
+        <p class="section-lead reveal">Bakalavr və magistr proqramları üzrə müraciət üçün ən çox seçilən istiqamətlərdən bəziləri.</p>
+      </div>
+
+      <div class="country-filters reveal" role="group" aria-label="Ölkəyə görə universitet filtri">
+        <button type="button" class="country-filter active" data-filter="all" aria-pressed="true">Hamısı</button>
+        <button type="button" class="country-filter" data-filter="uk" aria-pressed="false">Böyük Britaniya</button>
+        <button type="button" class="country-filter" data-filter="us" aria-pressed="false">ABŞ</button>
+        <button type="button" class="country-filter" data-filter="au" aria-pressed="false">Avstraliya</button>
+        <button type="button" class="country-filter" data-filter="pl" aria-pressed="false">Polşa</button>
+        <button type="button" class="country-filter" data-filter="ae" aria-pressed="false">BƏƏ</button>
+        <button type="button" class="country-filter" data-filter="hu" aria-pressed="false">Macarıstan</button>
+        <button type="button" class="country-filter" data-filter="be" aria-pressed="false">Belçika</button>
+        <button type="button" class="country-filter" data-filter="lt" aria-pressed="false">Litva</button>
+      </div>
+
+      <div class="university-grid" id="universityGrid">
+        <a class="university-card reveal" data-country="uk" href="universities/university-of-warwick.html" aria-label="University of Warwick haqqında ətraflı məlumat">
+          <img src="assets/campus-uk.webp" alt="Böyük Britaniyada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Böyük Britaniya</span>
+            <h3>University of Warwick</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="uk" href="universities/university-of-birmingham.html" aria-label="University of Birmingham haqqında ətraflı məlumat">
+          <img src="assets/campus-uk.webp" alt="Böyük Britaniyada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Böyük Britaniya</span>
+            <h3>University of Birmingham</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="uk" href="universities/university-of-st-andrews.html" aria-label="University of St Andrews haqqında ətraflı məlumat">
+          <img src="assets/campus-uk.webp" alt="Böyük Britaniyada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Böyük Britaniya</span>
+            <h3>University of St Andrews</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="uk" href="universities/university-college-london.html" aria-label="University College London haqqında ətraflı məlumat">
+          <img src="assets/campus-uk.webp" alt="Böyük Britaniyada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Böyük Britaniya</span>
+            <h3>University College London</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="us" href="universities/depaul-university.html" aria-label="DePaul University haqqında ətraflı məlumat">
+          <img src="assets/campus-us.webp" alt="ABŞ-da universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">ABŞ</span>
+            <h3>DePaul University</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="us" href="universities/auburn-university-at-montgomery.html" aria-label="Auburn University at Montgomery haqqında ətraflı məlumat">
+          <img src="assets/campus-us.webp" alt="ABŞ-da universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">ABŞ</span>
+            <h3>Auburn University at Montgomery</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="au" href="universities/university-of-sydney.html" aria-label="University of Sydney haqqında ətraflı məlumat">
+          <img src="assets/campus-au.webp" alt="Avstraliyada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Avstraliya</span>
+            <h3>University of Sydney</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="au" href="universities/adelaide-university.html" aria-label="Adelaide University haqqında ətraflı məlumat">
+          <img src="assets/campus-au.webp" alt="Avstraliyada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Avstraliya</span>
+            <h3>Adelaide University</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/akademia-gorniczo-hutnicza-im-stanislawa-staszica-w-krakowie.html" aria-label="Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="ae" href="universities/american-university-in-dubai.html" aria-label="American University in Dubai haqqında ətraflı məlumat">
+          <img src="assets/campus-ae.webp" alt="BƏƏda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">BƏƏ</span>
+            <h3>American University in Dubai</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="ae" href="universities/american-university-of-sharjah.html" aria-label="American University of Sharjah haqqında ətraflı məlumat">
+          <img src="assets/campus-ae.webp" alt="BƏƏda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">BƏƏ</span>
+            <h3>American University of Sharjah</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/budapesti-muszaki-es-gazdasagtudomanyi-egyetem.html" aria-label="Budapesti Műszaki és Gazdaságtudományi Egyetem haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Budapesti Műszaki és Gazdaságtudományi Egyetem</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/corvinus-university-of-budapest.html" aria-label="Corvinus University of Budapest haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Corvinus University of Budapest</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/debreceni-egyetem.html" aria-label="Debreceni Egyetem haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Debreceni Egyetem</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/eotvos-lorand-tudomanyegyetem.html" aria-label="Eötvös Loránd Tudományegyetem haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Eötvös Loránd Tudományegyetem</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/eotvos-lorand-university.html" aria-label="Eötvös Loránd University haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Eötvös Loránd University</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/ku-leuven.html" aria-label="KU Leuven haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>KU Leuven</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/katholieke-universiteit-leuven.html" aria-label="Katholieke Universiteit Leuven haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Katholieke Universiteit Leuven</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="lt" href="universities/kauno-technologijos-universitetas.html" aria-label="Kauno technologijos universitetas haqqında ətraflı məlumat">
+          <img src="assets/campus-lt.webp" alt="Litvada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Litva</span>
+            <h3>Kauno technologijos universitetas</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="ae" href="universities/khalifa-university-of-science-and-technology.html" aria-label="Khalifa University of Science and Technology haqqında ətraflı məlumat">
+          <img src="assets/campus-ae.webp" alt="BƏƏda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">BƏƏ</span>
+            <h3>Khalifa University of Science and Technology</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/luca-school-of-arts-royal-academy-of-fine-arts-antwerp.html" aria-label="LUCA School of Arts / Royal Academy of Fine Arts Antwerp haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>LUCA School of Arts / Royal Academy of Fine Arts Antwerp</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="lt" href="universities/lietuvos-sveikatos-mokslu-universitetas-lithuanian-universit.html" aria-label="Lietuvos sveikatos mokslų universitetas (Lithuanian University of Health Sciences) haqqında ətraflı məlumat">
+          <img src="assets/campus-lt.webp" alt="Litvada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Litva</span>
+            <h3>Lietuvos sveikatos mokslų universitetas (Lithuanian University of Health Sciences)</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/magyar-agrar-es-elettudomanyi-egyetem.html" aria-label="Magyar Agrár- és Élettudományi Egyetem haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Magyar Agrár- és Élettudományi Egyetem</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/politechnika-gdanska.html" aria-label="Politechnika Gdańska haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Politechnika Gdańska</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/politechnika-warszawska.html" aria-label="Politechnika Warszawska haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Politechnika Warszawska</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/semmelweis-egyetem.html" aria-label="Semmelweis Egyetem haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Semmelweis Egyetem</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/szegedi-tudomanyegyetem.html" aria-label="Szegedi Tudományegyetem haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>Szegedi Tudományegyetem</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="ae" href="universities/united-arab-emirates-university.html" aria-label="United Arab Emirates University haqqında ətraflı məlumat">
+          <img src="assets/campus-ae.webp" alt="BƏƏda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">BƏƏ</span>
+            <h3>United Arab Emirates University</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universiteit-antwerpen.html" aria-label="Universiteit Antwerpen haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Universiteit Antwerpen</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universiteit-gent.html" aria-label="Universiteit Gent haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Universiteit Gent</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universiteit-gent-2.html" aria-label="Universiteit Gent haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Universiteit Gent</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universiteit-hasselt.html" aria-label="Universiteit Hasselt haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Universiteit Hasselt</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universiteit-hasselt-2.html" aria-label="Universiteit Hasselt haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Universiteit Hasselt</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="hu" href="universities/university-of-pecs.html" aria-label="University of Pécs haqqında ətraflı məlumat">
+          <img src="assets/campus-hu.webp" alt="Macarıstanda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Macarıstan</span>
+            <h3>University of Pécs</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="ae" href="universities/university-of-sharjah.html" aria-label="University of Sharjah haqqında ətraflı məlumat">
+          <img src="assets/campus-ae.webp" alt="BƏƏda universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">BƏƏ</span>
+            <h3>University of Sharjah</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/university-of-warsaw.html" aria-label="University of Warsaw haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>University of Warsaw</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universite-catholique-de-louvain.html" aria-label="Université catholique de Louvain haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Université catholique de Louvain</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universite-de-liege.html" aria-label="Université de Liège haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Université de Liège</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universite-de-mons.html" aria-label="Université de Mons haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Université de Mons</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/universite-libre-de-bruxelles.html" aria-label="Université libre de Bruxelles haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Université libre de Bruxelles</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/uniwersytet-jagiellonski.html" aria-label="Uniwersytet Jagielloński haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Uniwersytet Jagielloński</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/uniwersytet-mikolaja-kopernika-w-toruniu.html" aria-label="Uniwersytet Mikołaja Kopernika w Toruniu haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Uniwersytet Mikołaja Kopernika w Toruniu</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/uniwersytet-warszawski.html" aria-label="Uniwersytet Warszawski haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Uniwersytet Warszawski</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/uniwersytet-wroclawski.html" aria-label="Uniwersytet Wrocławski haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Uniwersytet Wrocławski</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="pl" href="universities/uniwersytet-im-adama-mickiewicza-w-poznaniu.html" aria-label="Uniwersytet im. Adama Mickiewicza w Poznaniu haqqında ətraflı məlumat">
+          <img src="assets/campus-pl.webp" alt="Polşada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Polşa</span>
+            <h3>Uniwersytet im. Adama Mickiewicza w Poznaniu</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="lt" href="universities/vilniaus-gedimino-technikos-universitetas.html" aria-label="Vilniaus Gedimino technikos universitetas haqqında ətraflı məlumat">
+          <img src="assets/campus-lt.webp" alt="Litvada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Litva</span>
+            <h3>Vilniaus Gedimino technikos universitetas</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="lt" href="universities/vilniaus-universitetas.html" aria-label="Vilniaus universitetas haqqında ətraflı məlumat">
+          <img src="assets/campus-lt.webp" alt="Litvada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Litva</span>
+            <h3>Vilniaus universitetas</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="be" href="universities/vrije-universiteit-brussel.html" aria-label="Vrije Universiteit Brussel haqqında ətraflı məlumat">
+          <img src="assets/campus-be.webp" alt="Belçikada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Belçika</span>
+            <h3>Vrije Universiteit Brussel</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+
+        <a class="university-card reveal" data-country="lt" href="universities/vytauto-didziojo-universitetas.html" aria-label="Vytauto Didžiojo universitetas haqqında ətraflı məlumat">
+          <img src="assets/campus-lt.webp" alt="Litvada universitet kampusu" loading="lazy">
+          <div class="university-card-shade"></div>
+          <div class="university-card-content">
+            <span class="university-country">Litva</span>
+            <h3>Vytauto Didžiojo universitetas</h3>
+            <p>Bakalavr · Magistr</p>
+            <span class="university-card-action">Ətraflı bax</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="directory-cta reveal">
+        <div>
+          <h2>Sizə uyğun universiteti birlikdə seçək</h2>
+          <p>Akademik profil, büdcə və karyera məqsədlərinizə əsaslanan fərdi seçim siyahısı hazırlayaq.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Müraciət Et</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-inner reveal">
+      <h2>Xaricdə təhsil yolunuz buradan başlayır</h2>
+      <p>Qəbul strategiyanızı fərdi konsultasiya ilə planlaşdırın.</p>
+      <a href="contact.html" class="btn btn-gold">Konsultasiya AL</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Global Academy" class="brand-mark">
+        <span class="brand-text">Global<em>Academy</em></span>
+      </a>
+      <p>Peşəkar inkişaf və beynəlxalq təhsil sahəsində müasir təhsil mərkəzi.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Naviqasiya</h4>
+      <a href="about.html">Haqqımızda</a>
+      <a href="programs.html">Proqramlar</a>
+      <a href="abroad.html">Xaricdə Təhsil</a>
+      <a href="universities.html">Universitetlər</a>
+      <a href="contact.html">Əlaqə</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>İstiqamətlər</h4>
+      <a href="universities.html">Böyük Britaniya</a>
+      <a href="universities.html">ABŞ</a>
+      <a href="universities.html">Avstraliya</a>
+      <a href="contact.html">Fərdi konsultasiya</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Əlaqə</h4>
+      <a href="mailto:myglobalacademy01@gmail.com">myglobalacademy01@gmail.com</a>
+      <a href="tel:+994104260617">+994 10 426 06 17</a>
+      <span>Qarabağ Atları Meydanı, Ağ Şəhər, Bakı</span>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Global Academy. Bütün hüquqlar qorunur.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Yuxarı qayıt">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<button class="chat-toggle" id="chatToggle" aria-label="AI köməkçini aç">
+  <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v12H8l-4 4V4z"/></svg>
+  <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-header">
+    <img src="assets/logo.svg" alt="">
+    <div class="chat-header-text">
+      <strong>Global Academy AI</strong>
+      <span>Suallarınızı cavablandırmağa hazıram</span>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="Bağla">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-bubble chat-bubble-bot">Salam! Universitet və xaricdə təhsil prosesi haqqında sualınızı yaza bilərsiniz.</div>
+  </div>
+  <form class="chat-form" id="chatForm">
+    <input type="text" id="chatInput" placeholder="Sualınızı yazın..." autocomplete="off">
+    <button type="submit" aria-label="Göndər">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </form>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/universities.js"></script>
+<script src="js/chat-widget.js"></script>
+</body>
+</html>
